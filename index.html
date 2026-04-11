@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janish Enterprises | Tools & Spares</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+    <nav class="navbar">
+        <div class="logo">Janish <span>Enterprises</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="our-products.html">Products</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="inquiries.html">My Inquiries
+                <span id="inquiry-count" style="background:#e74c3c; padding:2px 6px; border-radius:50%; font-size:12px;">0</span>
+            </a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!-- ==================== HERO CAROUSEL ==================== -->
+    <header class="hero-container">
+        <div class="carousel">
+
+            <div class="slide active">
+                <img src="images/banner1.jpg" alt="Janish Enterprises">
+                <div class="hero-content">
+                    <span class="hero-label">Authorised Dealer</span>
+                    <h1>Your Trusted Source for Tools & Spares</h1>
+                    <p>Professional-grade equipment for mechanics and garage owners across the region.</p>
+                    <div class="hero-btns">
+                        <a href="our-products.html" class="hero-btn-primary"><i class="fas fa-box-open"></i> Browse Products</a>
+                        <a href="contact-us.html" class="hero-btn-secondary"><i class="fas fa-phone"></i> Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/banner2.jpg" alt="Bucket Grease Pumps">
+                <div class="hero-content">
+                    <span class="hero-label">Penta & Kapson</span>
+                    <h1>Bucket Grease Pumps</h1>
+                    <p>5kg to 50kg — all sizes available. Good quality, best rates.</p>
+                    <div class="hero-btns">
+                        <a href="our-products.html" class="hero-btn-primary"><i class="fas fa-box-open"></i> View Products</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/banner3.jpg" alt="Hydraulic Jacks">
+                <div class="hero-content">
+                    <span class="hero-label">Kapson & Titan</span>
+                    <h1>Hydraulic Jacks</h1>
+                    <p>Bottle jacks, trolley jacks, and low profile jacks — all types available.</p>
+                    <div class="hero-btns">
+                        <a href="our-products.html" class="hero-btn-primary"><i class="fas fa-box-open"></i> View Products</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/banner4.jpg" alt="Low Profile Jacks">
+                <div class="hero-content">
+                    <span class="hero-label">Fast Delivery</span>
+                    <h1>Low Profile Jacks</h1>
+                    <p>Get your garage back in business, quickly.</p>
+                    <div class="hero-btns">
+                        <a href="our-products.html" class="hero-btn-primary"><i class="fas fa-box-open"></i> View Products</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+
+            <!-- Dots -->
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </header>
+
+
+    <!-- ==================== STATS BAR ==================== -->
+    <section class="stats-bar">
+        <div class="stats-bar-inner">
+            <div class="stats-bar-item">
+                <div class="stat-num">5,000+</div>
+                <div class="stat-lbl">Tools in Stock</div>
+            </div>
+            <div class="stats-bar-item">
+                <div class="stat-num">12,000+</div>
+                <div class="stat-lbl">Parts Sold</div>
+            </div>
+            <div class="stats-bar-item">
+                <div class="stat-num">6+</div>
+                <div class="stat-lbl">Years in Business</div>
+            </div>
+            <div class="stats-bar-item">
+                <div class="stat-num">100%</div>
+                <div class="stat-lbl">Happy Clients</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== CATEGORIES SECTION ==================== -->
+    <section class="categories-section">
+        <div class="sec-header">
+            <span class="sec-label">What We Offer</span>
+            <h2 class="sec-title">Shop by Category</h2>
+            <p class="sec-subtitle">From grease pumps to power tools — everything a professional mechanic needs.</p>
+        </div>
+
+        <div class="cat-grid">
+            <a href="our-products.html" class="cat-card">
+                <div class="cat-icon"><i class="fas fa-oil-can"></i></div>
+                <h3>Grease Pumps</h3>
+                <p>5kg to 50kg bucket pumps</p>
+            </a>
+            <a href="our-products.html" class="cat-card">
+                <div class="cat-icon"><i class="fas fa-car-side"></i></div>
+                <h3>Hydraulic Jacks</h3>
+                <p>Bottle, trolley & low profile</p>
+            </a>
+            <a href="our-products.html" class="cat-card">
+                <div class="cat-icon"><i class="fas fa-tools"></i></div>
+                <h3>Hand Tools</h3>
+                <p>Spanners, wrenches & more</p>
+            </a>
+            <a href="our-products.html" class="cat-card">
+                <div class="cat-icon"><i class="fas fa-bolt"></i></div>
+                <h3>Power Tools</h3>
+                <p>Drills, grinders & impact guns</p>
+            </a>
+            <a href="our-products.html" class="cat-card">
+                <div class="cat-icon"><i class="fas fa-cogs"></i></div>
+                <h3>Spare Parts</h3>
+                <p>Pump parts & accessories</p>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ==================== AUTHORISED DEALER BRANDS ==================== -->
+    <section class="brands-section">
+        <h2 class="section-title">Authorised Dealer</h2>
+        <div class="brand-grid">
+            <div class="brand-item"><img src="images/brand1.png" alt="Brand"></div>
+            <div class="brand-item"><img src="images/brand2.png" alt="Brand"></div>
+            <div class="brand-item"><img src="images/brand3.png" alt="Brand"></div>
+            <div class="brand-item"><img src="images/brand6.png" alt="Brand"></div>
+        </div>
+    </section>
+
+    <section class="brands-section" style="background:#f4f4f4;">
+        <h2 class="section-title">We Also Deal In</h2>
+        <div class="brand-grid">
+            <div class="brand-item"><img src="images/brand4.png" alt="Brand"></div>
+            <div class="brand-item"><img src="images/brand5.png" alt="Brand"></div>
+        </div>
+    </section>
+
+
+    <!-- ==================== WHY CHOOSE US ==================== -->
+    <section class="why-section">
+        <div class="sec-header">
+            <span class="sec-label">Why Us</span>
+            <h2 class="sec-title">Why Choose Janish Enterprises?</h2>
+            <p class="sec-subtitle">We don't just sell tools — we help you get the job done right.</p>
+        </div>
+
+        <div class="why-home-grid">
+            <div class="why-home-card">
+                <div class="why-icon"><i class="fas fa-certificate"></i></div>
+                <h3>Authorised Dealer</h3>
+                <p>Official dealer for Penta, Kapson & Titan — 100% genuine products, always.</p>
+            </div>
+            <div class="why-home-card">
+                <div class="why-icon"><i class="fas fa-rupee-sign"></i></div>
+                <h3>Best Prices</h3>
+                <p>Direct dealership means no middlemen and honest pricing every time.</p>
+            </div>
+            <div class="why-home-card">
+                <div class="why-icon"><i class="fas fa-truck"></i></div>
+                <h3>Fast Delivery</h3>
+                <p>We process orders quickly so your workshop doesn't stop running.</p>
+            </div>
+            <div class="why-home-card">
+                <div class="why-icon"><i class="fab fa-whatsapp"></i></div>
+                <h3>WhatsApp Inquiry</h3>
+                <p>Add products to your list and send us your inquiry directly on WhatsApp.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==================== CTA BANNER ==================== -->
+    <section class="home-cta">
+        <h2>Ready to Place an Order?</h2>
+        <p>Browse our full product range or chat with us directly on WhatsApp.</p>
+        <div class="cta-buttons">
+            <a href="our-products.html" class="btn-cta-white">
+                <i class="fas fa-box-open"></i> Browse Products
+            </a>
+            <a href="https://wa.me/917972210365" target="_blank" class="btn-cta-dark">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">Janish <span>Enterprises</span></div>
+                <p>Your number one source for high-quality automobile parts and professional-grade tools. Quality guaranteed.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="our-products.html">Products</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Top Categories</h3>
+                <ul>
+                    <li><a href="our-products.html">Bucket Grease Pumps</a></li>
+                    <li><a href="our-products.html">Hydraulic Jacks</a></li>
+                    <li><a href="our-products.html">Spare Parts</a></li>
+                    <li><a href="our-products.html">Hand Tools</a></li>
+                    <li><a href="our-products.html">Power Tools</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Agrawal Logistic Compound,<br> Behind Kailash Petrol Pump,<br> Amravati Road, Wadi, Nagpur,<br> Maharashtra, India.<br> Pin-code 440023</p>
+                <p><i class="fas fa-phone"></i> +91 7972210365</p>
+                <p><i class="fas fa-envelope"></i> janishent@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Janish Enterprises. All Rights Reserved. | Designed for Mechanics</p>
+        </div>
+    </footer>
+
+
+    <!-- ==================== WHATSAPP FLOATING BUTTON ==================== -->
+    <a href="https://wa.me/917972210365" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>

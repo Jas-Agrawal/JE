@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janish Enterprises | My Inquiries</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="inquiries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar (unchanged) -->
+    <nav class="navbar">
+        <div class="logo">Janish <span>Enterprises</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="our-products.html">Products</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="inquiries.html">My Inquiries <span id="inquiry-count" style="background: #e74c3c; padding: 2px 6px; border-radius: 50%; font-size: 12px;">0</span></a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <section class="inquiry-header">
+        <h1>My <span>Inquiry</span> List</h1>
+        <p>Review your selected products and send us an inquiry via WhatsApp.</p>
+    </section>
+
+
+    <!-- Main Content -->
+    <div class="inquiry-page">
+
+        <!-- The inquiry list renders here -->
+        <div id="inquiryList"></div>
+
+        <!-- Action Buttons -->
+        <div class="inquiry-actions">
+            <button class="btn-whatsapp" onclick="sendFinalInquiry()">
+                <i class="fab fa-whatsapp"></i> Send Inquiry on WhatsApp
+            </button>
+            <button class="btn-clear" onclick="clearInquiries()">
+                <i class="fas fa-trash-alt"></i> Clear List
+            </button>
+        </div>
+
+        <p class="send-note">
+            <i class="fas fa-info-circle"></i>
+            Clicking "Send Inquiry" will open WhatsApp with your full product list pre-typed.
+        </p>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">Janish <span>Enterprises</span></div>
+                <p>Your number one source for high-quality automobile parts and professional-grade tools. Quality guaranteed.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="our-products.html">Products</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Top Categories</h3>
+                <ul>
+                    <li><a href="#">Bucket Grease Pumps</a></li>
+                    <li><a href="#">Hydraulic Jacks</a></li>
+                    <li><a href="#">Spare Parts</a></li>
+                    <li><a href="#">Hand Tools</a></li>
+                    <li><a href="#">Power Tools</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Agrawal Logistic Compound,<br> Behind Kailash Petrol Pump,<br> Amravati Road, Wadi, Nagpur,<br> Maharashtra, India.<br> Pin-code 440023</p>
+                <p><i class="fas fa-phone"></i> +91 7972210365</p>
+                <p><i class="fas fa-envelope"></i> janishent@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Janish Enterprises. All Rights Reserved.<br>Designed for Mechanics</p>
+        </div>
+    </footer>
+
+
+    <script src="inquiries.js"></script>
+
+</body>
+</html>

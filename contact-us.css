@@ -1,0 +1,319 @@
+/* =============================================
+   contact-us.css — Janish Enterprises
+   Contact Page Styles
+   ============================================= */
+
+
+/* --- Page Header --- */
+.contact-header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 120px 20px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Same subtle red diagonal stripe as inquiry page */
+.contact-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -10%;
+    width: 120%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        -55deg,
+        transparent,
+        transparent 40px,
+        rgba(231, 76, 60, 0.05) 40px,
+        rgba(231, 76, 60, 0.05) 80px
+    );
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.contact-header h1 span {
+    color: #e74c3c;
+}
+
+.contact-header p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 1rem;
+    position: relative;
+}
+
+
+/* --- Main Page Wrapper --- */
+.contact-page {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+
+/* =============================================
+   CONTACT FORM CARD
+   ============================================= */
+.contact-form-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+/* Red top bar accent — same idea as the inquiry table header */
+.contact-form-card .card-header {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-form-card .card-header i {
+    color: #e74c3c;
+    font-size: 1.2rem;
+}
+
+.contact-form-card .card-header h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.contact-form-card .card-body {
+    padding: 30px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 7px;
+    font-size: 0.95rem;
+    color: #333;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #fafafa;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit Button */
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 0.5px;
+}
+
+.btn-submit:hover {
+    background: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.35);
+}
+
+
+/* =============================================
+   INFO + MAP CARD (Right Column)
+   ============================================= */
+.contact-info-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Each info block (phone, address, email) */
+.info-block {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    padding: 22px 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    transition: transform 0.2s;
+}
+
+.info-block:hover {
+    transform: translateY(-3px);
+}
+
+/* Icon circle */
+.info-block .icon-circle {
+    width: 46px;
+    height: 46px;
+    background: #fff5f5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.info-block .icon-circle i {
+    color: #e74c3c;
+    font-size: 1.1rem;
+}
+
+.info-block .info-text h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.info-block .info-text p,
+.info-block .info-text a {
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+.info-block .info-text a:hover {
+    color: #e74c3c;
+}
+
+/* WhatsApp quick contact button */
+.whatsapp-block {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.whatsapp-block p {
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.whatsapp-block strong {
+    color: white;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.95rem;
+}
+
+.btn-whatsapp-sm {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25d366;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    flex-shrink: 0;
+}
+
+.btn-whatsapp-sm:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+/* Map wrapper */
+.map-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+
+.map-card iframe {
+    display: block;
+    width: 100%;
+    height: 260px;
+    border: none;
+}
+
+
+/* =============================================
+   MOBILE RESPONSIVE
+   ============================================= */
+@media (max-width: 900px) {
+    .contact-page {
+        grid-template-columns: 1fr; /* Stack form on top of info */
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form-card .card-body {
+        padding: 20px;
+    }
+
+    .whatsapp-block {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .btn-whatsapp-sm {
+        width: 100%;
+        justify-content: center;
+    }
+}

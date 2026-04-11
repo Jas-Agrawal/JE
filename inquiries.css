@@ -1,0 +1,369 @@
+/* =============================================
+   inquiries.css — Janish Enterprises
+   Inquiry List Page Styles
+   ============================================= */
+
+
+/* --- Page Header --- */
+.inquiry-header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 120px 20px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle red diagonal stripe in background */
+.inquiry-header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -10%;
+    width: 120%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        -55deg,
+        transparent,
+        transparent 40px,
+        rgba(231, 76, 60, 0.05) 40px,
+        rgba(231, 76, 60, 0.05) 80px
+    );
+}
+
+.inquiry-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.inquiry-header h1 span {
+    color: #e74c3c;
+}
+
+.inquiry-header p {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 1rem;
+    position: relative;
+}
+
+
+/* --- Main Page Wrapper --- */
+.inquiry-page {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 5%;
+}
+
+
+/* --- Empty State --- */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.empty-state i {
+    font-size: 3.5rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.empty-state h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.empty-state a {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.empty-state a:hover {
+    background: #c0392b;
+}
+
+
+/* --- Inquiry Table Card --- */
+.inquiry-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+
+/* --- Table Header Row --- */
+.inquiry-table-head {
+    display: grid;
+    grid-template-columns: 2.5fr 0.8fr 1.2fr 1.2fr 60px;
+    background: #1a1a1a;
+    color: white;
+    padding: 14px 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* --- Each Product Row --- */
+.inquiry-row {
+    display: grid;
+    grid-template-columns: 2.5fr 0.8fr 1.2fr 1.2fr 60px;
+    align-items: center;
+    padding: 18px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s;
+}
+
+.inquiry-row:last-child {
+    border-bottom: none;
+}
+
+.inquiry-row:hover {
+    background: #fafafa;
+}
+
+/* Product name styling */
+.inquiry-row .product-name {
+    font-weight: 600;
+    color: #222;
+    font-size: 0.95rem;
+}
+
+.inquiry-row .product-category {
+    font-size: 0.75rem;
+    color: #e74c3c;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+/* Quantity pill */
+.qty-pill {
+    display: inline-block;
+    background: #f0f0f0;
+    color: #333;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Price columns */
+.price-each {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.price-total {
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Remove button */
+.remove-btn {
+    background: none;
+    border: 2px solid #eee;
+    color: #bbb;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remove-btn:hover {
+    background: #e74c3c;
+    border-color: #e74c3c;
+    color: white;
+}
+
+
+/* --- Grand Total Bar --- */
+.grand-total-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    color: white;
+    padding: 18px 24px;
+    border-radius: 0 0 12px 12px;
+    font-size: 1rem;
+}
+
+.grand-total-bar .label {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.grand-total-bar .amount {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #e74c3c;
+}
+
+
+/* --- Action Buttons Row --- */
+.inquiry-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* WhatsApp Send Button */
+.btn-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
+}
+
+.btn-whatsapp:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+}
+
+.btn-whatsapp i {
+    font-size: 1.3rem;
+}
+
+/* Clear List Button */
+.btn-clear {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    color: #888;
+    border: 2px solid #ddd;
+    padding: 15px 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-clear:hover {
+    border-color: #e74c3c;
+    color: #e74c3c;
+    background: #fff5f5;
+}
+
+/* Helper note below buttons */
+.send-note {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #999;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.send-note i {
+    color: #25d366;
+}
+
+
+/* --- Item Count Badge --- */
+.item-count-badge {
+    display: inline-block;
+    background: #e74c3c;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+/* =============================================
+   MOBILE RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+
+    .inquiry-header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Stack the table into card-style rows on mobile */
+    .inquiry-table-head {
+        display: none; /* Hide desktop header on mobile */
+    }
+
+    .inquiry-row {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 20px;
+        position: relative;
+        border-bottom: 2px solid #f0f0f0;
+    }
+
+    /* Show remove button top-right on mobile */
+    .remove-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .price-total {
+        font-size: 1.1rem;
+    }
+
+    .grand-total-bar {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .inquiry-actions {
+        flex-direction: column;
+    }
+
+    .btn-whatsapp,
+    .btn-clear {
+        width: 100%;
+        justify-content: center;
+    }
+}
