@@ -10,7 +10,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Janish <span>Enterprises</span></div>
         <ul class="nav-links" id="navLinks">
@@ -22,57 +21,63 @@
                 <span id="inquiry-count" style="background:#e74c3c;padding:2px 6px;border-radius:50%;font-size:12px;">0</span>
             </a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     </nav>
 
-
-    <!-- Page Header with Global Search -->
     <section class="products-header">
         <h1>Our <span>Products</span></h1>
         <p>Browse by brand or search across our entire product range.</p>
-
-        <!-- Global search bar -->
         <div class="global-search-wrap">
-            <input type="text" id="globalSearch" placeholder="Search all products e.g. grease pump, hydraulic jack..." oninput="handleGlobalSearch()">
+            <input type="text" id="globalSearch" placeholder="Search all products e.g. grease pump, 1/2 inch, hydraulic jack..." oninput="handleGlobalSearch()">
             <i class="fas fa-search"></i>
         </div>
     </section>
 
-
-    <!-- Global Search Results (hidden until user types) -->
     <section class="search-results-section" id="searchResultsSection">
         <p class="results-title">Search results for: <span id="searchTermDisplay"></span></p>
         <div class="product-grid" id="globalSearchGrid"></div>
     </section>
 
-
-    <!-- Brand Cards Section -->
     <section class="brands-page" id="brandCardsSection">
         <p class="brands-page-title">Browse by Brand</p>
         <h2>Choose a Brand</h2>
-        <div class="brand-cards-grid" id="brandCardsGrid">
-            <!-- Rendered by JS -->
-        </div>
+        <div class="brand-cards-grid" id="brandCardsGrid"></div>
     </section>
 
-
-    <!-- Product Modal (shared, used in search results too) -->
+    <!-- ── MODAL ── -->
     <div id="productModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <div class="modal-body">
-                <div class="modal-img">
-                    <img id="modalImg" src="" alt="">
+
+                <!-- Left: Image Gallery -->
+                <div class="modal-gallery">
+                    <img id="galleryMainImg" class="gallery-main-img" src="" alt="">
+                    <div class="gallery-thumbs" id="galleryThumbs"></div>
                 </div>
+
+                <!-- Right: Info -->
                 <div class="modal-info">
                     <div class="modal-brand-tag" id="modalBrand"></div>
                     <div class="modal-tags" id="modalTags"></div>
                     <h2 id="modalName"></h2>
                     <p class="modal-desc" id="modalDesc"></p>
-                    <div class="modal-price" id="modalPrice"></div>
 
+                    <!-- Variant selector -->
+                    <div class="variant-section" id="variantSection">
+                        <div class="variant-label">
+                            <span id="variantTypeName">Size</span>:
+                            <span class="selected-variant-name" id="selectedVariantName">— Select one</span>
+                        </div>
+                        <div class="variant-buttons" id="variantButtons"></div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="modal-price-wrap">
+                        <div class="modal-price" id="modalPrice"></div>
+                    </div>
+
+                    <!-- Qty + Add -->
                     <div class="modal-actions">
                         <div class="modal-qty-wrap">
                             <button onclick="changeModalQty(-1)">−</button>
@@ -85,20 +90,17 @@
                     </div>
                     <p class="modal-note"><i class="fas fa-truck"></i> Delivery within 3–5 business days.</p>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <!-- Toast -->
     <div class="toast" id="toast"></div>
 
-    <!-- WhatsApp Float -->
     <a href="https://wa.me/917972210365" target="_blank" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-col">
@@ -136,7 +138,7 @@
     </footer>
 
     <script src="products-data.js"></script>
+    <script src="shared-product-ui.js"></script>
     <script src="our-products.js"></script>
-
 </body>
 </html>

@@ -10,7 +10,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Janish <span>Enterprises</span></div>
         <ul class="nav-links" id="navLinks">
@@ -22,13 +21,9 @@
                 <span id="inquiry-count" style="background:#e74c3c;padding:2px 6px;border-radius:50%;font-size:12px;">0</span>
             </a></li>
         </ul>
-        <div class="hamburger" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </div>
+        <div class="hamburger" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
     </nav>
 
-
-    <!-- Page Header (filled dynamically by JS) -->
     <section class="products-header">
         <div class="breadcrumb">
             <a href="our-products.html">Products</a>
@@ -37,63 +32,74 @@
         </div>
         <h1 id="brandPageTitle">Brand <span>Products</span></h1>
         <p id="brandPageDesc">Loading...</p>
-
-        <!-- Per-brand search bar -->
         <div class="brand-page-search">
             <input type="text" id="brandSearch" placeholder="Search within this brand..." oninput="handleBrandSearch()">
             <i class="fas fa-search"></i>
         </div>
     </section>
 
-
-    <!-- Products Section -->
     <section class="products-section">
         <div class="products-section-header">
             <h2 id="productsHeading">All Products</h2>
             <span class="product-count-label" id="productCountLabel">0 products</span>
         </div>
 
-        <!-- Best Sellers first -->
-        <div id="bestSellerSection" style="margin-bottom: 40px; display:none;">
-            <p style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#e74c3c; margin-bottom:18px;">
+        <!-- Best Sellers shown first -->
+        <div id="bestSellerSection" style="margin-bottom:40px; display:none;">
+            <p style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#e74c3c;margin-bottom:18px;">
                 <i class="fas fa-fire"></i> Best Sellers
             </p>
             <div class="product-grid" id="bestSellerGrid"></div>
         </div>
 
-        <!-- All products (or filtered results) -->
         <div id="allProductsSection">
-            <p id="allProductsLabel" style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#888; margin-bottom:18px;">
+            <p id="allProductsLabel" style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#888;margin-bottom:18px;">
                 All Products
             </p>
             <div class="product-grid" id="productGrid"></div>
         </div>
     </section>
 
-
-    <!-- Other Brands section -->
     <section class="brands-page" id="otherBrandsSection">
         <p class="brands-page-title">Explore More</p>
         <h2>Other Brands</h2>
         <div class="brand-cards-grid" id="otherBrandsGrid"></div>
     </section>
 
-
-    <!-- Product Modal -->
+    <!-- ── MODAL ── -->
     <div id="productModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
             <div class="modal-body">
-                <div class="modal-img">
-                    <img id="modalImg" src="" alt="">
+
+                <!-- Left: Image Gallery -->
+                <div class="modal-gallery">
+                    <img id="galleryMainImg" class="gallery-main-img" src="" alt="">
+                    <div class="gallery-thumbs" id="galleryThumbs"></div>
                 </div>
+
+                <!-- Right: Info -->
                 <div class="modal-info">
                     <div class="modal-brand-tag" id="modalBrand"></div>
                     <div class="modal-tags" id="modalTags"></div>
                     <h2 id="modalName"></h2>
                     <p class="modal-desc" id="modalDesc"></p>
-                    <div class="modal-price" id="modalPrice"></div>
 
+                    <!-- Variant selector -->
+                    <div class="variant-section" id="variantSection">
+                        <div class="variant-label">
+                            <span id="variantTypeName">Size</span>:
+                            <span class="selected-variant-name" id="selectedVariantName">— Select one</span>
+                        </div>
+                        <div class="variant-buttons" id="variantButtons"></div>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="modal-price-wrap">
+                        <div class="modal-price" id="modalPrice"></div>
+                    </div>
+
+                    <!-- Qty + Add -->
                     <div class="modal-actions">
                         <div class="modal-qty-wrap">
                             <button onclick="changeModalQty(-1)">−</button>
@@ -106,20 +112,17 @@
                     </div>
                     <p class="modal-note"><i class="fas fa-truck"></i> Delivery within 3–5 business days.</p>
                 </div>
+
             </div>
         </div>
     </div>
 
-    <!-- Toast -->
     <div class="toast" id="toast"></div>
 
-    <!-- WhatsApp Float -->
     <a href="https://wa.me/917972210365" target="_blank" class="whatsapp-float">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-
-    <!-- Footer -->
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-col">
@@ -157,7 +160,7 @@
     </footer>
 
     <script src="products-data.js"></script>
+    <script src="shared-product-ui.js"></script>
     <script src="brand.js"></script>
-
 </body>
 </html>
