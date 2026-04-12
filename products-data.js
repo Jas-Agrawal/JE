@@ -360,43 +360,285 @@ const productData = [
 
     // ══ PENTA ════════════════════════════════════════════════
     {
-        id: 50,
-        name: "Grease Dispenser / Bucket Pump",
+        id: 21,
+        name: "Hand Operated Grease Dispenser(Pump)",
         brand: "Penta",
-        description: "Penta grease dispenser with wheel trolley. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        description: "Penta hand operated grease dispenser . Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
-            "https://via.placeholder.com/400x300?text=Penta+Dispenser",
-            "https://via.placeholder.com/400x300?text=Penta+Nozzle+Detail",
-            "https://via.placeholder.com/400x300?text=Penta+Trolley+View"
+            "images/penta/hod/hod2.jpg",
+            "images/penta/hod/hod3.jpg",
+"images/penta/hod/hod4.jpg",
+"images/penta/hod/hod5.jpg",
+"images/penta/hod/hod6.jpg",
+"images/penta/hod/hod7.jpg",
+
         ],
-        bestSeller: true,
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "3kg",  price: 3200 },
+            { label: "5kg", price: 3900 },
+            { label: "10kg", price: 4600 },
+            { label: "20kg", price: 4600 },
+        ]
+    },
+    {
+        id: 22,
+        name: "Pneumatic Grease Dispenser(Pump)",
+        brand: "Penta",
+        description: "Penta pneumatic grease dispenser . Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/pgd/pgd1.png",
+"images/penta/pgd/pgd2.png",
+"images/penta/pgd/pgd3.png",
+"images/penta/pgd/pgd4.png",
+"images/penta/pgd/pgd5.png",
+            
+        ],
+        bestSeller: false,
         newArrival: false,
         variantType: "Capacity",
         variants: [
             { label: "5kg",  price: 3200 },
-            { label: "10kg", price: 3900 },
-            { label: "15kg", price: 4600 }
+            { label: "15kg", price: 3900 },
+            { label: "25kg", price: 4600 },
+            { label: "50kg", price: 4600 },
         ]
     },
     {
-        id: 51,
-        name: "Pneumatic Grease Pump",
+        id: 23,
+        name: "Pneumatic Oil Dispenser(Pump)",
         brand: "Penta",
-        description: "Penta air-powered pneumatic grease pump for high-volume dispensing. Designed for busy truck workshops and industrial garages.",
+        description: "Penta pneumatic oil dispenser . Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
-            "https://via.placeholder.com/400x300?text=Penta+Pneumatic",
-            "https://via.placeholder.com/400x300?text=Penta+Air+Inlet",
-            "https://via.placeholder.com/400x300?text=Penta+Hose+Detail"
+            "images/penta/pod.png",
+            
         ],
-        bestSeller: true,
+        bestSeller: false,
         newArrival: false,
         variantType: "Capacity",
         variants: [
-            { label: "15kg", price: 2100 },
-            { label: "25kg", price: 2800 },
-            { label: "50kg", price: 4500 }
+            { label: "50kg",  price: 3200 },
         ]
     },
+    {
+        id: 24,
+        name: "Hydraulic Floor Crane",
+        brand: "Penta",
+        description: "Penta hydraulic floor crane. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/hfc.jpg",
+            "images/penta/hfc2.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "1.25 Ton",  price: 3200 },
+            { label: "2 Ton",  price: 3200 },
+        ]
+    },
+    {
+        id: 25,
+        name: "Hydraulic Trolley Jack",
+        brand: "Penta",
+        description: "Penta hydraulic Trolley Jack. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/htj.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "3 Ton Regular",  price: 3200 },
+            { label: "3 Ton Low Profile",  price: 3200 },
+            { label: "5 Ton",  price: 3200 },
+            { label: "10 Ton",  price: 3200 },
+        ]
+    },
+     {
+        id: 26,
+        name: "Hydraulic Two Wheeler Lift",
+        brand: "Penta",
+        description: "Penta hydraulic Two Wheeler Lift. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/hwl.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "125kg Manual",  price: 3200 },
+            { label: "175kg Manual",  price: 3200 },
+            { label: "175kg Motorised",  price: 3200 },
+            { label: "300kg Motorised",  price: 3200 },
+        ]
+    },
+    {
+        id: 27,
+        name: "Mechanic Creeper",
+        brand: "Penta",
+        description: "Penta Mechanical Creeper. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/mc.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Regular (90kg load) ",  price: 3200 },
+            { label: "Foldable (90kg load)",  price: 3200 },
+       ]
+    },
+    {
+        id: 28,
+        name: "Horizontal Pressure Washer",
+        brand: "Penta",
+        description: "Penta Horizontal Pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/hpw.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "X1-A",  price: 3200 },
+            { label: "X3-B",  price: 3200 },
+        ]
+    },
+    {
+        id: 29,
+        name: "High Pressure Washer Triplex Pump",
+        brand: "Penta",
+        description: "Penta high pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/highpw.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "PE50",  price: 3200 },
+            { label: "PE100",  price: 3200 },
+{ label: "PE200",  price: 3200 },
+{ label: "PE300",  price: 3200 },
+        ]
+    },
+    {
+        id: 30,
+        name: "Foam Sprayer",
+        brand: "Penta",
+        description: "Penta high pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/fs.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "2 ltr Capacity",  price: 3200 },
+            { label: "50 ltr Capacity",  price: 3200 },
+        ]
+    },
+    {
+        id: 31,
+        name: "Axel Stand",
+        brand: "Penta",
+        description: "Penta axel stand. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/as.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "2 Ton",  price: 3200 },
+            { label: "3 Ton",  price: 3200 },
+{ label: "6 Ton",  price: 3200 },
+{ label: "12 Ton",  price: 3200 },
+{ label: "22 Ton",  price: 3200 },
+        ]
+    },
+    {
+        id: 32,
+        name: "Rotary Engine Stand",
+        brand: "Penta",
+        description: "Penta high pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/res.png",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "",  price: 3200 },
+        ]
+    },
+    {
+        id: 33,
+        name: "Pneumatic Barrel Oil & Grease Pump",
+        brand: "Penta",
+        description: "Penta high pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/pbop.jpg",
+"images/penta/pbgp.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Oil Pump Capacity = 205kg",  price: 3200 },
+            { label: "Grease Pump Capacity = 200ltr",  price: 3200 },
+        ]
+    },
+    {
+        id: 34,
+        name: "Waste Oil Collector",
+        brand: "Penta",
+        description: "Penta high pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/wocm.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Manual = 25ltr",  price: 3200 },
+            { label: "Manual = 50ltr",  price: 3200 },
+ { label: "Pressurised = 50ltr",  price: 3200 },
+ { label: "Pressurised Truck = 50ltr",  price: 3200 },
+        ]
+    },
+    {
+        id: 35,
+        name: "Automobile Special Tools",
+        brand: "Penta",
+        description: "Penta high pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
+        images: [
+            "images/penta/ast.jpg",
+            
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Send Enquiry or contact us",  price: 1 },
+
+        ]
+    },
+
 
     // ══ TITAN ════════════════════════════════════════════════
     {
@@ -594,7 +836,7 @@ const productData = [
         ]
     },
     {
-        id: 20,
+        id: 200,
         name: "Plier Set",
         brand: "Hand Tools",
         description: "Chrome vanadium steel plier set. Includes combination, long nose, and cutting pliers with bi-material comfort grip handles.",
@@ -613,7 +855,7 @@ const productData = [
 
     // ══ POWER TOOLS ══════════════════════════════════════════
     {
-        id: 21,
+        id: 210,
         name: "Angle Grinder",
         brand: "Power Tools",
         description: "Heavy-duty angle grinder with safety guard, spindle lock, and anti-restart protection. For grinding, cutting, and polishing metal.",
@@ -632,7 +874,7 @@ const productData = [
         ]
     },
     {
-        id: 22,
+        id: 220,
         name: "Electric Drill",
         brand: "Power Tools",
         description: "Variable speed electric drill with keyless chuck. Forward/reverse rotation. For drilling metal, wood, and concrete.",
