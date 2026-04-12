@@ -366,11 +366,11 @@ const productData = [
         description: "Penta hand operated grease dispenser . Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
             "images/penta/hod/hod2.jpg",
-            "images/penta/hod/hod3.jpg",
+            "images/penta/hod/hod3.png",
 "images/penta/hod/hod4.jpg",
 "images/penta/hod/hod5.jpg",
-"images/penta/hod/hod6.jpg",
-"images/penta/hod/hod7.jpg",
+"images/penta/hod/hod6.png",
+"images/penta/hod/hod7.png",
 
         ],
         bestSeller: false,
@@ -428,8 +428,8 @@ const productData = [
         brand: "Penta",
         description: "Penta hydraulic floor crane. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
-            "images/penta/hfc.jpg",
-            "images/penta/hfc2.jpg",
+            "images/penta/hfc1.png",
+            "images/penta/hfc2.png",
             
         ],
         bestSeller: false,
@@ -446,7 +446,9 @@ const productData = [
         brand: "Penta",
         description: "Penta hydraulic Trolley Jack. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
-            "images/penta/htj.jpg",
+            "images/penta/htj1.png",
+            "images/penta/htj3.png",
+            "images/penta/htj4.png",
             
         ],
         bestSeller: false,
@@ -466,6 +468,7 @@ const productData = [
         description: "Penta hydraulic Two Wheeler Lift. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
             "images/penta/hwl.jpg",
+            "images/penta/hwl1.jpg",
             
         ],
         bestSeller: false,
@@ -485,6 +488,7 @@ const productData = [
         description: "Penta Mechanical Creeper. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
             "images/penta/mc.jpg",
+            "images/penta/mc1.png",
             
         ],
         bestSeller: false,
@@ -502,6 +506,7 @@ const productData = [
         description: "Penta Horizontal Pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
             "images/penta/hpw.jpg",
+            "images/penta/hpw1.jpg",
             
         ],
         bestSeller: false,
@@ -519,6 +524,8 @@ const productData = [
         description: "Penta high pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
             "images/penta/highpw.jpg",
+            "images/penta/highpw1.jpg",
+            "images/penta/highpw2.jpg",
             
         ],
         bestSeller: false,
@@ -537,7 +544,8 @@ const productData = [
         brand: "Penta",
         description: "Penta high pressure washer. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
         images: [
-            "images/penta/fs.jpg",
+            "images/penta/fs.png",
+            "images/penta/fs1.png",
             
         ],
         bestSeller: false,
@@ -642,55 +650,149 @@ const productData = [
 
     // ══ TITAN ════════════════════════════════════════════════
     {
-        id: 99,
-        name: "Hydraulic Floor Jack",
+        id: 41,
+        name: "Hydraulic Bottle Jack 2 Ton",
         brand: "Titan",
         description: "Titan hydraulic floor jack with steel frame and dual-piston pump for fast lifting. Built for everyday garage and workshop use.",
         images: [
-            "https://via.placeholder.com/400x300?text=Titan+Floor+Jack",
-            "https://via.placeholder.com/400x300?text=Titan+Jack+Handle",
-            "https://via.placeholder.com/400x300?text=Titan+Jack+Wheel"
+             "images/titan/2sl.jpg",
+             "images/titan/2dl.jpg",    
         ],
-        bestSeller: true,
+        bestSeller: false,
         newArrival: false,
         variantType: "Capacity",
         variants: [
-            { label: "2 Ton", price: 1600 },
-            { label: "3 Ton", price: 2100 },
-            { label: "5 Ton", price: 2800 }
+            { label: "2 Ton Single Lift", price: 1600 },
+            { label: "2 Ton Double Lift", price: 2100 }
         ]
     },
     {
-        id: 110,
-        name: "Heavy Duty Bottle Jack",
+        id: 42,
+        name: "Hydraulic Bottle Jack 3 Ton",
         brand: "Titan",
         description: "Titan heavy-duty bottle jack for trucks, buses, and commercial vehicles. Compact and powerful.",
         images: [
-            "https://via.placeholder.com/400x300?text=Titan+Bottle+Jack",
-            "https://via.placeholder.com/400x300?text=Titan+Bottle+Base"
+            "images/titan/3sl.jpg",
+             "images/titan/3dl.jpg", 
         ],
         bestSeller: false,
         newArrival: false,
         variantType: "Capacity",
         variants: [
-            { label: "10 Ton", price: 3500 },
-            { label: "15 Ton", price: 4800 },
-            { label: "20 Ton", price: 6200 }
+            { label: "3 Ton Single Lift", price: 3500 },
+            { label: "3 Ton Double Lift", price: 4800 },
         ]
     },
     {
-        id: 120,
-        name: "Low Profile Trolley Jack",
+        id: 43,
+        name: "Hydraulic Bottle Jack 5 Ton",
         brand: "Titan",
         description: "Titan low profile trolley jack with extra-low minimum height. Perfect for sports cars and vehicles with low ground clearance. Smooth swivel casters.",
         images: [
-            "https://via.placeholder.com/400x300?text=Titan+Low+Profile",
-            "https://via.placeholder.com/400x300?text=Titan+LP+Side",
-            "https://via.placeholder.com/400x300?text=Titan+LP+Caster"
+            "images/titan/5sl.jpg", 
         ],
         bestSeller: false,
-        newArrival: true,
+        newArrival: false,
         price: 4200   // single price, no variants
+    },
+    {
+        id: 44,
+        name: "Hydraulic Bottle Jack 8 Ton",
+        brand: "Titan",
+        description: "Titan heavy-duty bottle jack for trucks, buses, and commercial vehicles. Compact and powerful.",
+        images: [
+            "images/titan/8sl.jpg",
+             "images/titan/8dl.jpg", 
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "8 Ton Single Lift", price: 3500 },
+            { label: "8 Ton Double Lift", price: 4800 },
+        ]
+    },
+    {
+        id: 45,
+        name: "Hydraulic Bottle Jack 10 Ton",
+        brand: "Titan",
+        description: "Titan low profile trolley jack with extra-low minimum height. Perfect for sports cars and vehicles with low ground clearance. Smooth swivel casters.",
+        images: [
+            "images/titan/10.jpg",
+        ],
+        bestSeller: false,
+        newArrival: false,
+        price: 4200   // single price, no variants
+    },
+    {
+        id: 46,
+        name: "Hydraulic Bottle Jack 15 Ton",
+        brand: "Titan",
+        description: "Titan low profile trolley jack with extra-low minimum height. Perfect for sports cars and vehicles with low ground clearance. Smooth swivel casters.",
+        images: [
+           "images/titan/15.jpg",
+        ],
+        bestSeller: false,
+        newArrival: false,
+        price: 4200   // single price, no variants
+    },
+    {
+        id: 47,
+        name: "Hydraulic Bottle Jack 20 Ton",
+        brand: "Titan",
+        description: "Titan low profile trolley jack with extra-low minimum height. Perfect for sports cars and vehicles with low ground clearance. Smooth swivel casters.",
+        images: [
+            "images/titan/20.jpg",
+        ],
+        bestSeller: false,
+        newArrival: false,
+        price: 4200   // single price, no variants
+    },
+    {
+        id: 48,
+        name: "Hydraulic Bottle Jack 35 Ton",
+        brand: "Titan",
+        description: "Titan low profile trolley jack with extra-low minimum height. Perfect for sports cars and vehicles with low ground clearance. Smooth swivel casters.",
+        images: [
+              "images/titan/35.jpg",
+        ],
+        bestSeller: false,
+        newArrival: false,
+        price: 4200   // single price, no variants
+    },
+    {
+        id: 49,
+        name: "Hydraulic Floor Jack",
+        brand: "Titan",
+        description: "Titan heavy-duty bottle jack for trucks, buses, and commercial vehicles. Compact and powerful.",
+        images: [
+            "images/titan/2fj.jpg",
+"images/titan/3fj.png",
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "2 Ton Hyd Floor Jack", price: 3500 },
+            { label: "3 Ton Hyd Floor Jack", price: 4800 },
+        ]
+    },
+    {
+        id: 50,
+        name: "Wheel Choke & Jack Stand",
+        brand: "Titan",
+        description: "Titan heavy-duty bottle jack for trucks, buses, and commercial vehicles. Compact and powerful.",
+        images: [
+            "images/titan/wc.png",
+"images/titan/js.png",
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Wheel Choke", price: 3500 },
+            { label: "Jack Stand", price: 4800 },
+        ]
     },
 
     // ══ GROZ ═════════════════════════════════════════════════
