@@ -108,8 +108,6 @@ const productData = [
         images: [
             "images/kapson/bgp/K-700.png",
             "images/kapson/bgp/K-701.png",
-            "images/kapson/bgp/KGP-6.png",
-            "images/kapson/bgp/K-702.png",
         ],
         bestSeller: true,
         newArrival: false,
@@ -196,10 +194,173 @@ const productData = [
        ]
 
     },
+    {
+        id: 6,
+        name: "Rotary Pump, Oil Can",
+        brand: "Kapson",
+        description: "Kapson rotary pumps for grease and oil. Easy to use. Available in multiple capacities.",
+        images: [
+            "images/kapson/accessories/K-402.png",
+            "images/kapson/accessories/K-405.png",
+            "images/kapson/accessories/prcp.png",
+            "images/kapson/accessories/prop.png",
+            "images/kapson/accessories/K-102.png",
+
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Rotary Barrel Pump",  price: 500  },
+            { label: "Lever Action Barrel Pump",  price: 650  },
+            { label: "Plastic Rotary Chemical Pump",  price: 780  },
+            { label: "Plastic Rotary Oil Pump",  price: 900  },
+            { label: "Oil Can",  price: 1100  },
+
+       ]
+
+    },
+    {
+        id: 7,
+        name: "Cantilever Tool Box",
+        brand: "Kapson",
+        description: "Kapson Tool Box. Easy to use. Available in multiple capacities.",
+        images: [
+            "images/kapson/accessories/K-600.png",
+            "images/kapson/accessories/K-602.png",
+
+        ],
+        bestSeller: false,
+        newArrival: true,
+        variantType: "Capacity",
+        variants: [
+            { label: "5 compartments",  price: 3000  }
+       ]
+
+    },
+    {
+        id: 8,
+        name: "T-Type Socket",
+        brand: "Kapson",
+        description: "Kapson T-Type Socket. Easy to use. Available in multiple capacities.",
+        images: [
+            "images/kapson/accessories/K-206.png",
+
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "6 MM",  price: 3000  },
+            { label: "7 MM",  price: 3000  },
+            { label: "8 MM",  price: 3000  },
+            { label: "9 MM",  price: 3000  },
+            { label: "10 MM",  price: 3000  },
+            { label: "11 MM",  price: 3000  },
+            { label: "12 MM",  price: 3000  },
+            { label: "13 MM",  price: 3000  },
+            { label: "14 MM",  price: 3000  },
+            { label: "15 MM",  price: 3000  },
+            { label: "16 MM",  price: 3000  },
+            { label: "17 MM",  price: 3000  },
+            { label: "18 MM",  price: 3000  },
+            { label: "19 MM",  price: 3000  },
+       ]
+
+    },
+    {
+        id: 9,
+        name: "Hose Pipe, Hose",
+        brand: "Kapson",
+        description: "Kapson Hose Pipe. Easy to use. Available in multiple capacities.",
+        images: [
+            "images/kapson/accessories/K-174.png",
+            "images/kapson/accessories/K-130.png",
+
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Hose Pipe W/o Gun",  price: 3000  },
+            { label: "Hose Pipe With Gun",  price: 3000  },
+            { label: "Hose 12'",  price: 3000  },
+            { label: "Hose 18'",  price: 3000  },
+       ]
+
+    },
+     {
+        id: 10,
+        name: "Wheel Spanner",
+        brand: "Kapson",
+        description: "Kapson Wheel Spanner. Easy to use. Available in multiple capacities.",
+        images: [
+            "images/kapson/accessories/K-951.png",
+
+        ],
+        bestSeller: false,
+        newArrival: true,
+        variantType: "Capacity",
+        variants: [
+            { label: "K-951 24x24",  price: 3000  },
+            { label: "K-952 24x24",  price: 3000  },
+            { label: "K-953 24x24",  price: 3000  },
+            { label: "K-954 24x24",  price: 3000  },
+            { label: "K-955 24x24",  price: 3000  },
+            { label: "K-956 24x24",  price: 3000  },
+            { label: "K-957 24x24",  price: 3000  },
+            { label: "K-958 24x24",  price: 3000  },
+            { label: "K-959 24x24",  price: 3000  },
+            { label: "K-960 24x24",  price: 3000  },
+            { label: "K-960 24x24",  price: 3000  },
+{ label: "K-961 24x24",  price: 3000  },
+{ label: "K-962 24x24",  price: 3000  },
+{ label: "K-963 24x24",  price: 3000  },
+{ label: "K-964 24x24",  price: 3000  },
+{ label: "K-965 24x24",  price: 3000  },
+{ label: "K-966 24x24",  price: 3000  },
+{ label: "K-967 24x24",  price: 3000  },
+{ label: "K-968 24x24",  price: 3000  },
+{ label: "K-969 24x24",  price: 3000  },
+{ label: "K-970 24x24",  price: 3000  },
+{ label: "K-971 24x24",  price: 3000  },
+{ label: "K-972 24x24",  price: 3000  },
+{ label: "K-973 24x24",  price: 3000  },
+       ]
+
+    },
+    {
+        id: 11,
+        name: "Nozzles",
+        brand: "Kapson",
+        description: "Kapson Coupler And Nozzles. Pencil type nozzles. Available in multiple capacities.",
+        images: [
+            "images/kapson/nozzel/K-278.png",
+            "images/kapson/nozzel/K-381.png",
+            "images/kapson/nozzel/K-382.png",
+"images/kapson/nozzel/K-383.png",
+"images/kapson/nozzel/K-384.png",
+"images/kapson/nozzel/K-385.png",
+"images/kapson/nozzel/K-386.png",
+"images/kapson/nozzel/K-388.png",
+
+
+        ],
+        bestSeller: false,
+        newArrival: true,
+        variantType: "Capacity",
+        variants: [
+            { label: "K-278 Coupler",  price: 3000  },
+            { label: "Pencil Nozzles",  price: 3000  }
+            
+       ]
+
+    },
+
 
     // ══ PENTA ════════════════════════════════════════════════
     {
-        id: 6,
+        id: 50,
         name: "Grease Dispenser / Bucket Pump",
         brand: "Penta",
         description: "Penta grease dispenser with wheel trolley. Precision-engineered for consistent lubrication output at automotive service centres and workshops.",
@@ -218,7 +379,7 @@ const productData = [
         ]
     },
     {
-        id: 7,
+        id: 51,
         name: "Pneumatic Grease Pump",
         brand: "Penta",
         description: "Penta air-powered pneumatic grease pump for high-volume dispensing. Designed for busy truck workshops and industrial garages.",
@@ -239,7 +400,7 @@ const productData = [
 
     // ══ TITAN ════════════════════════════════════════════════
     {
-        id: 10,
+        id: 99,
         name: "Hydraulic Floor Jack",
         brand: "Titan",
         description: "Titan hydraulic floor jack with steel frame and dual-piston pump for fast lifting. Built for everyday garage and workshop use.",
@@ -258,7 +419,7 @@ const productData = [
         ]
     },
     {
-        id: 11,
+        id: 110,
         name: "Heavy Duty Bottle Jack",
         brand: "Titan",
         description: "Titan heavy-duty bottle jack for trucks, buses, and commercial vehicles. Compact and powerful.",
@@ -276,7 +437,7 @@ const productData = [
         ]
     },
     {
-        id: 12,
+        id: 120,
         name: "Low Profile Trolley Jack",
         brand: "Titan",
         description: "Titan low profile trolley jack with extra-low minimum height. Perfect for sports cars and vehicles with low ground clearance. Smooth swivel casters.",
@@ -292,7 +453,7 @@ const productData = [
 
     // ══ GROZ ═════════════════════════════════════════════════
     {
-        id: 13,
+        id: 130,
         name: "Combination Spanner",
         brand: "Groz",
         description: "Groz combination spanner — chrome vanadium steel, precision forged and heat-treated. 15° offset ring end for knuckle clearance. Individual sizes or full set.",
