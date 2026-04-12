@@ -199,7 +199,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 0.95rem;
-    transition: all 0.3s;
+    transition: all 0.6s;
     box-shadow: 0 4px 15px rgba(231,76,60,0.4);
 }
 
@@ -221,7 +221,7 @@ body {
     font-size: 0.95rem;
     border: 2px solid rgba(255,255,255,0.5);
     backdrop-filter: blur(4px);
-    transition: all 0.3s;
+    transition: all 0.6s;
 }
 
 .hero-btn-secondary:hover {
@@ -246,7 +246,7 @@ body {
     border-radius: 50%;
     background: rgba(255,255,255,0.4);
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.6s;
     border: none;
     padding: 0;
 }
@@ -269,7 +269,7 @@ body {
     cursor: pointer;
     font-size: 1.2rem;
     z-index: 20;
-    transition: 0.3s;
+    transition: 0.6s;
     border-radius: 50%;
     backdrop-filter: blur(4px);
 }
