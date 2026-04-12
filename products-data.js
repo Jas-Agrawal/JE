@@ -30,7 +30,7 @@ const brandInfo = {
         tagline: "Grease Pumps & Hydraulic Equipment",
         description: "Kapson is one of India's leading manufacturers of grease pumps and lubrication equipment. Janish Enterprises is an authorised dealer for Kapson products.",
         icon: "fas fa-oil-can",
-        logo: "images/brand2.png"
+        logo: "images/kapson/logo.png"
     },
     Penta: {
         name: "Penta",
@@ -78,19 +78,26 @@ const productData = [
         brand: "Kapson",
         description: "Kapson hydraulic bottle jack with heavy-duty steel base. Solid build with safety overload protection. Ideal for cars, SUVs, and light trucks.",
         images: [
-            "images/banner3.jpg",
-            "https://via.placeholder.com/400x300?text=Jack+Side+View",
-            "https://via.placeholder.com/400x300?text=Jack+Base+Detail"
+            "images/kapson/hydjack/k_902.png",
+            "images/kapson/hydjack/k_910.png",
+            
         ],
         bestSeller: true,
         newArrival: false,
         variantType: "Capacity",
         variants: [
-            { label: "2 Ton",  price: 650  },
-            { label: "3 Ton",  price: 800  },
-            { label: "5 Ton",  price: 900  },
-            { label: "10 Ton", price: 1400 },
-            { label: "20 Ton", price: 2200 }
+            { label: "Model- K902 2 Ton",  price: 650  },
+            { label: "Model- K904 4 Ton",  price: 800  },
+            { label: "Model- K906 6 Ton",  price: 900  },
+            { label: "Model- K910 10 Ton", price: 1100 },
+            { label: "Model- K912 12 Ton", price: 1500 },
+            { label: "Model- K916 16 Ton", price: 1650 },
+            { label: "Model- K920 20 Ton", price: 1800 },
+            { label: "Model- K935 35 Ton", price: 2000 },
+            { label: "Model- K950 50 Ton", price: 2500 },
+            { label: "Model- K975 75 Ton", price: 2700 },
+            { label: "Model- K900 100 Ton", price: 3000 },
+            
         ]
     },
     {
@@ -99,16 +106,19 @@ const productData = [
         brand: "Kapson",
         description: "Kapson grease bucket pump without wheel. Consistent pressure output for daily lubrication tasks in small to medium workshops.",
         images: [
-            "images/banner2.jpg",
-            "https://via.placeholder.com/400x300?text=Pump+Top+View"
+            "images/kapson/bgp/K-700.png",
+            "images/kapson/bgp/K-701.png",
+            "images/kapson/bgp/KGP-6.png",
+            "images/kapson/bgp/K-702.png",
         ],
         bestSeller: true,
         newArrival: false,
         variantType: "Capacity",
         variants: [
-            { label: "5kg",  price: 2200 },
-            { label: "10kg", price: 2800 },
-            { label: "15kg", price: 3400 }
+            { label: "Model- K700 3kg BGP (w/o wheel)",  price: 1900  },
+            { label: "Model- K701 5kg BGP (w/o wheel)",  price: 2100  },
+            { label: "Model- KGP-6 6kg BGP (w/o wheel)",  price: 2300  },
+            { label: "Model- K702 10kg BGP (w/o wheel)",  price: 2600  },
         ]
     },
     {
@@ -117,17 +127,74 @@ const productData = [
         brand: "Kapson",
         description: "Kapson grease bucket pump on wheeled trolley for easy mobility. Durable steel construction. Available in multiple capacities.",
         images: [
-            "https://via.placeholder.com/400x300?text=Kapson+With+Wheel",
-            "https://via.placeholder.com/400x300?text=Kapson+Wheel+Detail"
+            "images/kapson/bgp/K-705.png",
+
         ],
         bestSeller: false,
         newArrival: false,
         variantType: "Capacity",
         variants: [
-            { label: "5kg  (Model K701)",  price: 2400 },
-            { label: "6kg  (Model KGPW6)", price: 2500 },
-            { label: "10kg",               price: 3000 }
+            { label: "Model- K705 5kg BGP (with wheel)",  price: 1900  },
+            { label: "Model- KGPW-6 6kg BGP (with wheel)",  price: 2100  },
+            { label: "Model- K706 10kg BGP (with wheel)",  price: 2300  },
+            { label: "Model- K707 15kg BGP (with wheel)",  price: 2600  },
+            { label: "Model- K708 20kg BGP (with wheel)",  price: 2500 },
         ]
+    },
+    {
+        id: 4,
+        name: "Hand Gun",
+        brand: "Kapson",
+        description: "Kapson grease hand gun.Easy to use. Available in multiple capacities.",
+        images: [
+            "images/kapson/bgp/K-501.png",
+            "images/kapson/bgp/K-506.png",
+            "images/kapson/bgp/K-507.png",
+
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Model- K513 32OZ / 950CC (5/16 PISTON)",  price: 500  },
+            { label: "Model- K501 150Z / 500 CC (5/8 PISTON)",  price: 650  },
+            { label: "Model- K503 150Z / 445CC (1/2 PISTON)",  price: 780  },
+            { label: "Model- K506 140Z / 500CC (5/16 PISTON)",  price: 900  },
+            { label: "Model- K507 100Z / 300CC (5/16 PISTON)",  price: 1100  },
+            { label: "Model- K509 80Z / 200CC (5/16 PISTON)",  price: 1250  },
+            { label: "Model- K511 80Z / 200CC (5/16 PISTON)",  price: 1400  },
+       ]
+
+    },
+     {
+        id: 5,
+        name: "Grease Fittings",
+        brand: "Kapson",
+        description: "Fittings for grease gun. Available in multiple capacities.",
+        images: [
+            "images/kapson/fitting/K-266.png",
+            "images/kapson/fitting/K-267.png",
+            "images/kapson/fitting/K-268.png",
+
+        ],
+        bestSeller: false,
+        newArrival: false,
+        variantType: "Capacity",
+        variants: [
+            { label: "Model- K326 6.0X1.0MM /STRAIGHT /L-16MM",  price: 500  },
+            { label: "Model- K327 6.0X1.0MM /45 DEG /L-21 MM",  price: 650  },
+            { label: "Model- K328 6.0X1.0MM /90 DEG /L-18 MM",  price: 780  },
+            { label: "Model- K329 8.0X1.0MM /STRAIGHT /L-16MM",  price: 500  },
+            { label: "Model- K330 8.0X1.0MM /45 DEG /L-21 MM",  price: 650  },
+            { label: "Model- K331 8.0X1.0MM /90 DEG /L-18 MM",  price: 780  },
+            { label: "Model- K332 10.0X1.0MM /STRAIGHT/L-18MM",  price: 780  },
+            { label: "Model- K333 10.0X1.0MM /45DEG /L-21 MM",  price: 780  },
+            { label: "Model- K334 10.0X1.0MM /90DEG /L-18MM",  price: 780  },
+            { label: "Model- K335 10.0X1.5MM /STRAIGHT /L-18MM",  price: 780  },
+            { label: "Model- K336 10.0X1.5MM /45 DEG /L-21MM",  price: 780  },
+            { label: "Model- K337 10.0X1.5MM /90 DEG /L-18MM",  price: 780  },
+       ]
+
     },
 
     // ══ PENTA ════════════════════════════════════════════════
