@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janish Enterprises | Products</title>
+    <title>Janish Enterprises | Brand Products</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="our-products.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -28,37 +28,58 @@
     </nav>
 
 
-    <!-- Page Header with Global Search -->
+    <!-- Page Header (filled dynamically by JS) -->
     <section class="products-header">
-        <h1>Our <span>Products</span></h1>
-        <p>Browse by brand or search across our entire product range.</p>
+        <div class="breadcrumb">
+            <a href="our-products.html">Products</a>
+            <span>›</span>
+            <span id="breadcrumbBrand">Brand</span>
+        </div>
+        <h1 id="brandPageTitle">Brand <span>Products</span></h1>
+        <p id="brandPageDesc">Loading...</p>
 
-        <!-- Global search bar -->
-        <div class="global-search-wrap">
-            <input type="text" id="globalSearch" placeholder="Search all products e.g. grease pump, hydraulic jack..." oninput="handleGlobalSearch()">
+        <!-- Per-brand search bar -->
+        <div class="brand-page-search">
+            <input type="text" id="brandSearch" placeholder="Search within this brand..." oninput="handleBrandSearch()">
             <i class="fas fa-search"></i>
         </div>
     </section>
 
 
-    <!-- Global Search Results (hidden until user types) -->
-    <section class="search-results-section" id="searchResultsSection">
-        <p class="results-title">Search results for: <span id="searchTermDisplay"></span></p>
-        <div class="product-grid" id="globalSearchGrid"></div>
-    </section>
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="products-section-header">
+            <h2 id="productsHeading">All Products</h2>
+            <span class="product-count-label" id="productCountLabel">0 products</span>
+        </div>
 
+        <!-- Best Sellers first -->
+        <div id="bestSellerSection" style="margin-bottom: 40px; display:none;">
+            <p style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#e74c3c; margin-bottom:18px;">
+                <i class="fas fa-fire"></i> Best Sellers
+            </p>
+            <div class="product-grid" id="bestSellerGrid"></div>
+        </div>
 
-    <!-- Brand Cards Section -->
-    <section class="brands-page" id="brandCardsSection">
-        <p class="brands-page-title">Browse by Brand</p>
-        <h2>Choose a Brand</h2>
-        <div class="brand-cards-grid" id="brandCardsGrid">
-            <!-- Rendered by JS -->
+        <!-- All products (or filtered results) -->
+        <div id="allProductsSection">
+            <p id="allProductsLabel" style="font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:#888; margin-bottom:18px;">
+                All Products
+            </p>
+            <div class="product-grid" id="productGrid"></div>
         </div>
     </section>
 
 
-    <!-- Product Modal (shared, used in search results too) -->
+    <!-- Other Brands section -->
+    <section class="brands-page" id="otherBrandsSection">
+        <p class="brands-page-title">Explore More</p>
+        <h2>Other Brands</h2>
+        <div class="brand-cards-grid" id="otherBrandsGrid"></div>
+    </section>
+
+
+    <!-- Product Modal -->
     <div id="productModal" class="modal">
         <div class="modal-content">
             <span class="close-btn" onclick="closeModal()">&times;</span>
@@ -136,7 +157,7 @@
     </footer>
 
     <script src="products-data.js"></script>
-    <script src="our-products.js"></script>
+    <script src="brand.js"></script>
 
 </body>
 </html>
