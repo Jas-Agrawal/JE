@@ -90,8 +90,11 @@ body {
    HERO CAROUSEL
    ============================================= */
 .hero-container {
-    position: relative;
-    height: 92vh;
+   position: relative;
+    height: 70vh;
+    width: 80vh;
+    text: center;
+    left: 32%;
     overflow: hidden;
     margin-top: 62px; /* push below fixed navbar */
 }
@@ -283,7 +286,7 @@ body {
 .prev { left: 20px; }
 
 @media (max-width: 768px) {
-    .hero-container { height: 75vh; }
+    .hero-container { height: 70vh; width: 100%; align: center; left: 0;}
     .hero-content h1 { font-size: 2rem; }
     .prev, .next { padding: 10px 12px; font-size: 1rem; }
 }
