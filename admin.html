@@ -1043,7 +1043,171 @@
         .toggle input:checked + .toggle-slider { background: var(--red); }
         .toggle input:checked + .toggle-slider::before { transform: translateX(18px); }
 
-        /* ── Mobile menu toggle ── */
+        /* ── Login Gate ── */
+        .login-gate {
+            position: fixed;
+            inset: 0;
+            background: var(--bg);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-box {
+            width: 100%;
+            max-width: 380px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px 36px;
+            box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .login-logo {
+            font-family: var(--font-head);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .login-logo span { color: var(--red); }
+
+        .login-badge {
+            display: inline-block;
+            background: var(--red-glow);
+            color: var(--red);
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 32px;
+        }
+
+        .login-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .login-subtitle {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+        }
+
+        .login-input-wrap {
+            position: relative;
+            margin-bottom: 14px;
+        }
+
+        .login-input-wrap input {
+            width: 100%;
+            background: var(--surface2);
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 44px 12px 16px;
+            color: var(--text);
+            font-size: 0.95rem;
+            font-family: var(--font-body);
+            outline: none;
+            transition: border-color 0.2s;
+            letter-spacing: 2px;
+        }
+
+        .login-input-wrap input:focus { border-color: var(--red); }
+
+        .login-input-wrap input::placeholder { letter-spacing: 0; color: var(--text-dim); }
+
+        .login-eye {
+            position: absolute;
+            right: 14px; top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-dim);
+            cursor: pointer;
+            font-size: 0.9rem;
+            background: none;
+            border: none;
+            padding: 0;
+            transition: color 0.2s;
+        }
+
+        .login-eye:hover { color: var(--text-muted); }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: var(--red);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            font-family: var(--font-body);
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-top: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .login-btn:hover {
+            background: var(--red-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(231,76,60,0.35);
+        }
+
+        .login-error {
+            font-size: 0.8rem;
+            color: var(--red);
+            margin-top: 12px;
+            min-height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .login-error.visible { opacity: 1; }
+
+        .login-lock-icon {
+            width: 56px; height: 56px;
+            background: var(--red-glow);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 1.3rem;
+            color: var(--red);
+        }
+
+        .login-shake {
+            animation: loginShake 0.4s ease;
+        }
+
+        @keyframes loginShake {
+            0%, 100% { transform: translateX(0); }
+            20% { transform: translateX(-8px); }
+            40% { transform: translateX(8px); }
+            60% { transform: translateX(-5px); }
+            80% { transform: translateX(5px); }
+        }
+
+        .login-footer-note {
+            margin-top: 24px;
+            font-size: 0.75rem;
+            color: var(--text-dim);
+        }
+    
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -1103,6 +1267,42 @@
     </style>
 </head>
 <body>
+
+<!-- ── Login Gate ── -->
+<div class="login-gate" id="loginGate">
+    <div class="login-box" id="loginBox">
+        <div class="login-logo">Janish <span>Enterprises</span></div>
+        <div class="login-badge">Admin Panel</div>
+
+        <div class="login-lock-icon">
+            <i class="fas fa-lock"></i>
+        </div>
+
+        <div class="login-title">Restricted Access</div>
+        <div class="login-subtitle">Enter the admin password to continue.</div>
+
+        <div class="login-input-wrap">
+            <input type="password" id="loginPasswordInput" placeholder="Enter password"
+                onkeydown="if(event.key==='Enter') attemptLogin()">
+            <button class="login-eye" onclick="toggleLoginEye()" id="loginEyeBtn">
+                <i class="fas fa-eye" id="loginEyeIcon"></i>
+            </button>
+        </div>
+
+        <button class="login-btn" onclick="attemptLogin()">
+            <i class="fas fa-unlock-alt"></i> Unlock Admin Panel
+        </button>
+
+        <div class="login-error" id="loginError">
+            <i class="fas fa-exclamation-circle"></i>
+            <span id="loginErrorMsg">Incorrect password. Try again.</span>
+        </div>
+
+        <div class="login-footer-note">
+            Contact the site developer to reset the password.
+        </div>
+    </div>
+</div>
 
 <!-- Sidebar Overlay (mobile) -->
 <div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
@@ -1493,9 +1693,28 @@
                             </div>
                         </div>
 
+                        <div class="settings-section">
+                            <h3>Admin Password</h3>
+                            <div class="setting-row" style="align-items:flex-start;flex-direction:column;gap:14px;">
+                                <div class="setting-label">
+                                    <strong>Change Admin Password</strong>
+                                    <span>Update the password required to access this admin panel.</span>
+                                </div>
+                                <div style="width:100%;display:flex;flex-direction:column;gap:10px;">
+                                    <input class="form-input" type="password" id="newPasswordInput" placeholder="New password">
+                                    <input class="form-input" type="password" id="confirmPasswordInput" placeholder="Confirm new password">
+                                    <div id="passwordChangeMsg" style="font-size:0.8rem;min-height:18px;"></div>
+                                    <button class="btn btn-primary" onclick="changeAdminPassword()" style="align-self:flex-start;">
+                                        <i class="fas fa-key"></i> Update Password
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
                         <button class="btn btn-primary" onclick="showToast('Settings saved', false)">
                             <i class="fas fa-save"></i> Save Settings
                         </button>
+
                     </div>
                 </div>
             </div>
@@ -2325,8 +2544,97 @@ function showToast(msg, isError = false) {
     });
 });
 
+// ── Change Password ───────────────────────────────────────────
+async function changeAdminPassword() {
+    const newPwd     = document.getElementById('newPasswordInput').value;
+    const confirmPwd = document.getElementById('confirmPasswordInput').value;
+    const msg        = document.getElementById('passwordChangeMsg');
+
+    if (!newPwd || newPwd.length < 6) {
+        msg.innerHTML = `<span style="color:var(--red)"><i class="fas fa-times-circle"></i> Password must be at least 6 characters.</span>`;
+        return;
+    }
+    if (newPwd !== confirmPwd) {
+        msg.innerHTML = `<span style="color:var(--red)"><i class="fas fa-times-circle"></i> Passwords do not match.</span>`;
+        return;
+    }
+
+    const hash = await hashPassword(newPwd);
+    // Store the new hash in localStorage so it persists across page loads
+    localStorage.setItem('adminPasswordHash', hash);
+
+    document.getElementById('newPasswordInput').value = '';
+    document.getElementById('confirmPasswordInput').value = '';
+    msg.innerHTML = `<span style="color:var(--green)"><i class="fas fa-check-circle"></i> Password updated successfully!</span>`;
+    setTimeout(() => { msg.innerHTML = ''; }, 4000);
+    showToast('Admin password updated');
+}
+
+// ── Login Gate ────────────────────────────────────────────────
+// Password is hashed with SHA-256 so it's not stored in plain text.
+// Default password: janish@admin2026
+const ADMIN_PASSWORD_HASH = '137be202eaaa985b7ec6d33fee5f08531a4770d8fe8ba1e2e4fcf8808350ffc2';
+
+async function hashPassword(password) {
+    const msgBuffer = new TextEncoder().encode(password);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+async function attemptLogin() {
+    const input = document.getElementById('loginPasswordInput').value;
+    if (!input) return;
+
+    const hash = await hashPassword(input);
+    // Use custom password if set, otherwise fall back to default
+    const activeHash = localStorage.getItem('adminPasswordHash') || ADMIN_PASSWORD_HASH;
+
+    if (hash === activeHash) {
+        // Store session (expires when tab closes)
+        sessionStorage.setItem('adminAuth', '1');
+        document.getElementById('loginGate').style.display = 'none';
+        init();
+    } else {
+        const box = document.getElementById('loginBox');
+        const err = document.getElementById('loginError');
+        document.getElementById('loginErrorMsg').textContent = 'Incorrect password. Try again.';
+        err.classList.add('visible');
+        box.classList.remove('login-shake');
+        void box.offsetWidth; // reflow to restart animation
+        box.classList.add('login-shake');
+        document.getElementById('loginPasswordInput').value = '';
+        document.getElementById('loginPasswordInput').focus();
+        setTimeout(() => box.classList.remove('login-shake'), 400);
+    }
+}
+
+function toggleLoginEye() {
+    const input = document.getElementById('loginPasswordInput');
+    const icon  = document.getElementById('loginEyeIcon');
+    if (input.type === 'password') {
+        input.type = 'text';
+        icon.className = 'fas fa-eye-slash';
+    } else {
+        input.type = 'password';
+        icon.className = 'fas fa-eye';
+    }
+}
+
+// Check if already authenticated this session
+if (sessionStorage.getItem('adminAuth') === '1') {
+    document.getElementById('loginGate').style.display = 'none';
+    // init() will be called below normally
+} else {
+    // Block init until login — do NOT call init() yet
+    // The page renders but the main content is invisible behind the gate
+}
+
 // ── Start ─────────────────────────────────────────────────────
-init();
+// Only auto-init if already authenticated
+if (sessionStorage.getItem('adminAuth') === '1') {
+    init();
+}
 </script>
 </body>
 </html>
