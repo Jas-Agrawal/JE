@@ -64,47 +64,47 @@ const productData = [
         "variants": [
             {
                 "label": "Model- K902 2 Ton",
-                "price": 650
+                "price": 0
             },
             {
                 "label": "Model- K904 4 Ton",
-                "price": 800
+                "price": 0
             },
             {
                 "label": "Model- K906 6 Ton",
-                "price": 900
+                "price": 0
             },
             {
                 "label": "Model- K910 10 Ton",
-                "price": 1100
+                "price": 0
             },
             {
                 "label": "Model- K912 12 Ton",
-                "price": 1500
+                "price": 0
             },
             {
                 "label": "Model- K916 16 Ton",
-                "price": 1650
+                "price": 0
             },
             {
                 "label": "Model- K920 20 Ton",
-                "price": 1800
+                "price": 0
             },
             {
                 "label": "Model- K935 35 Ton",
-                "price": 2000
+                "price": 0
             },
             {
                 "label": "Model- K950 50 Ton",
-                "price": 2500
+                "price": 0
             },
             {
                 "label": "Model- K975 75 Ton",
-                "price": 2700
+                "price": 0
             },
             {
                 "label": "Model- K900 100 Ton",
-                "price": 3000
+                "price": 0
             }
         ]
     },
@@ -123,19 +123,19 @@ const productData = [
         "variants": [
             {
                 "label": "Model- K700 3kg BGP (w/o wheel)",
-                "price": 1900
+                "price": 0
             },
             {
                 "label": "Model- K701 5kg BGP (w/o wheel)",
-                "price": 2100
+                "price": 0
             },
             {
                 "label": "Model- KGP-6 6kg BGP (w/o wheel)",
-                "price": 2300
+                "price": 0
             },
             {
                 "label": "Model- K702 10kg BGP (w/o wheel)",
-                "price": 2600
+                "price": 0
             }
         ]
     },
@@ -153,23 +153,23 @@ const productData = [
         "variants": [
             {
                 "label": "Model- K705 5kg BGP (with wheel)",
-                "price": 1900
+                "price": 0
             },
             {
                 "label": "Model- KGPW-6 6kg BGP (with wheel)",
-                "price": 2100
+                "price": 0
             },
             {
                 "label": "Model- K706 10kg BGP (with wheel)",
-                "price": 2300
+                "price": 0
             },
             {
                 "label": "Model- K707 15kg BGP (with wheel)",
-                "price": 2600
+                "price": 0
             },
             {
                 "label": "Model- K708 20kg BGP (with wheel)",
-                "price": 2500
+                "price": 0
             }
         ]
     },
@@ -189,31 +189,31 @@ const productData = [
         "variants": [
             {
                 "label": "Model- K513 32OZ / 950CC (5/16 PISTON)",
-                "price": 500
+                "price": 0
             },
             {
                 "label": "Model- K501 150Z / 500 CC (5/8 PISTON)",
-                "price": 650
+                "price": 0
             },
             {
                 "label": "Model- K503 150Z / 445CC (1/2 PISTON)",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Model- K506 140Z / 500CC (5/16 PISTON)",
-                "price": 900
+                "price": 0
             },
             {
                 "label": "Model- K507 100Z / 300CC (5/16 PISTON)",
-                "price": 1100
+                "price": 0
             },
             {
                 "label": "Model- K509 80Z / 200CC (5/16 PISTON)",
-                "price": 1250
+                "price": 0
             },
             {
                 "label": "Model- K511 80Z / 200CC (5/16 PISTON)",
-                "price": 1400
+                "price": 0
             }
         ]
     },
@@ -233,51 +233,51 @@ const productData = [
         "variants": [
             {
                 "label": "Model- K326 6.0X1.0MM /STRAIGHT /L-16MM",
-                "price": 500
+                "price": 0
             },
             {
                 "label": "Model- K327 6.0X1.0MM /45 DEG /L-21 MM",
-                "price": 650
+                "price": 0
             },
             {
                 "label": "Model- K328 6.0X1.0MM /90 DEG /L-18 MM",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Model- K329 8.0X1.0MM /STRAIGHT /L-16MM",
-                "price": 500
+                "price": 0
             },
             {
                 "label": "Model- K330 8.0X1.0MM /45 DEG /L-21 MM",
-                "price": 650
+                "price": 0
             },
             {
                 "label": "Model- K331 8.0X1.0MM /90 DEG /L-18 MM",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Model- K332 10.0X1.0MM /STRAIGHT/L-18MM",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Model- K333 10.0X1.0MM /45DEG /L-21 MM",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Model- K334 10.0X1.0MM /90DEG /L-18MM",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Model- K335 10.0X1.5MM /STRAIGHT /L-18MM",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Model- K336 10.0X1.5MM /45 DEG /L-21MM",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Model- K337 10.0X1.5MM /90 DEG /L-18MM",
-                "price": 780
+                "price": 0
             }
         ]
     },
@@ -299,23 +299,23 @@ const productData = [
         "variants": [
             {
                 "label": "Rotary Barrel Pump",
-                "price": 500
+                "price": 0
             },
             {
                 "label": "Lever Action Barrel Pump",
-                "price": 650
+                "price": 0
             },
             {
                 "label": "Plastic Rotary Chemical Pump",
-                "price": 780
+                "price": 0
             },
             {
                 "label": "Plastic Rotary Oil Pump",
-                "price": 900
+                "price": 0
             },
             {
                 "label": "Oil Can",
-                "price": 1100
+                "price": 0
             }
         ]
     },
@@ -334,7 +334,7 @@ const productData = [
         "variants": [
             {
                 "label": "5 compartments",
-                "price": 3000
+                "price": 0
             }
         ]
     },
@@ -352,59 +352,59 @@ const productData = [
         "variants": [
             {
                 "label": "6 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "7 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "8 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "9 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "10 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "11 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "12 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "13 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "14 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "15 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "16 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "17 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "18 MM",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "19 MM",
-                "price": 3000
+                "price": 0
             }
         ]
     },
@@ -423,19 +423,19 @@ const productData = [
         "variants": [
             {
                 "label": "Hose Pipe W/o Gun",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "Hose Pipe With Gun",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "Hose 12'",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "Hose 18'",
-                "price": 3000
+                "price": 0
             }
         ]
     },
@@ -453,99 +453,99 @@ const productData = [
         "variants": [
             {
                 "label": "K-951 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-952 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-953 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-954 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-955 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-956 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-957 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-958 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-959 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-960 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-960 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-961 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-962 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-963 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-964 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-965 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-966 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-967 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-968 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-969 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-970 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-971 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-972 24x24",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "K-973 24x24",
-                "price": 3000
+                "price": 0
             }
         ]
     },
@@ -570,11 +570,11 @@ const productData = [
         "variants": [
             {
                 "label": "K-278 Coupler",
-                "price": 3000
+                "price": 0
             },
             {
                 "label": "Pencil Nozzles",
-                "price": 3000
+                "price": 0
             }
         ]
     },
